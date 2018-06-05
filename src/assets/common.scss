@@ -1,0 +1,108 @@
+//1、混合器
+@mixin circlebox {
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+//2、全局样式定义
+/*2.1背景颜色*/
+$backgroundDark: #30373f;
+
+.contentWrap,
+.batchContentBg,
+.batchContentBgModal,
+.contractContentBg,
+.manageBatchContent {
+  background-color: #f7f7f7;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+.contentWrap,
+.manageBatchContent {
+  min-height: 450px;
+}
+
+.manageBatchContent {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.batchContent,
+.contractContent,
+.dataUpload,
+.batchFilter,
+.manageList,
+.CompanyStateWrap,
+.Mes_invitationWrap,
+.ManagecontractContent,
+.Template,
+.minTemplate,
+.tableContract .title {
+  background-color: #ffffff;
+}
+
+//2.2 bootstrap样式重新定义
+.companyContent .table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  vertical-align: middle;
+}
+
+.btn-default {
+  width: 120px;
+  height: 40px;
+  background-color: #0099ff;
+  border-color: #0099ff;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
+  border: 1px solid #f2f2f4;
+}
+
+.table-striped > tbody {
+  & > tr:nth-of-type(odd) {
+    background-color: #f2f2f4;
+  }
+  & > tr:nth-of-type(2n) {
+    background-color: #fff;
+  }
+}
+
+.bootstrap-table .table {
+  background-color: #fff;
+  & > thead > tr > th {
+    vertical-align: middle !important;
+  }
+}
+
+.radio,
+.checkbox {
+  margin: 0;
+}
+
+.form-horizontal .form-group {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.dropdown-menu {
+  min-width: 60px;
+  margin-right: 10px;
+}
